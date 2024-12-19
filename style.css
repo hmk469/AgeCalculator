@@ -49,18 +49,17 @@
     font-weight: 500;
     color: #333;
     cursor: pointer;
-}
-.input_box input::-webkit-calendar-picker-indicator{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    height: auto;
+}.input_box input::-webkit-calendar-picker-indicator {
     position: absolute;
-    background-position: calc(100% -10px);
-    background-size: 30px;
+    right: 10px; /* Align the calendar icon closer to the right edge */
+    top: 50%; /* Vertically center the icon */
+    transform: translateY(-50%); /* Adjust centering */
+    background-position: center;
+    background-size: 20px;
+    width: 20px; /* Adjust the size */
+    height: 20px; /* Adjust the size */
     cursor: pointer;
+    opacity: 0.7; /* Optional: make it slightly transparent */
 }
 #result{
     font-size: 20px;
